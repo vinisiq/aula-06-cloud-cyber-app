@@ -17,14 +17,14 @@ Uma aplicação Flask bem simples: guarda pequenas notas de texto em um banco Po
 
 A aplicação lê a configuração do banco inteiramente de variáveis de ambiente — nunca edite `app.py` para colocar credenciais fixas (lembra a Aula 05?).
 
-| Variável       | Para quê serve                                  | Exemplo (RDS)                                      |
-|----------------|--------------------------------------------------|-----------------------------------------------------|
-| `DB_HOST`      | Endpoint do banco                                | `seu-rds.xxxxxxxxxx.us-east-1.rds.amazonaws.com`     |
-| `DB_PORT`      | Porta do PostgreSQL                              | `5432`                                               |
-| `DB_NAME`      | Nome do banco de dados                           | `notasdb`                                            |
-| `DB_USER`      | Usuário do banco                                 | `notas_app`                                          |
-| `DB_PASSWORD`  | Senha do usuário do banco                        | *(defina a sua ao criar o RDS)*                      |
-| `APP_PORT`     | Porta em que a aplicação escuta (opcional)       | `8080` (padrão)                                      |
+| Variável       | Para quê serve                              | Exemplo (RDS)                                      |
+| --------------- | -------------------------------------------- | -------------------------------------------------- |
+| `DB_HOST`     | Endpoint do banco                            | `seu-rds.xxxxxxxxxx.us-east-1.rds.amazonaws.com` |
+| `DB_PORT`     | Porta do PostgreSQL                          | `5432`                                           |
+| `DB_NAME`     | Nome do banco de dados                       | `notasdb`                                        |
+| `DB_USER`     | Usuário do banco                            | `notas_app`                                      |
+| `DB_PASSWORD` | Senha do usuário do banco                   | *(defina a sua ao criar o RDS)*                  |
+| `APP_PORT`    | Porta em que a aplicação escuta (opcional) | `8080` (padrão)                                 |
 
 Copie `.env.example` para `.env` e preencha com os valores do seu próprio RDS quando chegar nessa etapa do desafio.
 
